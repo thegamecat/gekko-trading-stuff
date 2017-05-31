@@ -22,7 +22,7 @@ var fsw = require('fs');
 
 Add this in .check under your logic etc I've used adx as an example:
 
-  grreadtime = this.candle.start._d;
+  grreadtime = candle.start.toDate();
   headertxt = "date,price,adx,buys (USD),sells (BTC)\n";
   outtxt = grreadtime+","+ price+","+adxresult+","+buytime+","+selltime+"\n";
 
