@@ -1,7 +1,19 @@
 # gekko-trading-stuff
 A dumping ground for my files I use with this awesome crypto currency trading platform https://github.com/askmike/gekko
 
+******************************************************************************************************************************
+Indicators:
+Place the indicators into the Strategies / Indicators folder then reference them inside your strategy. 
 
+TWIG.js
+This is a TWIGs indicator based on https://www.incrediblecharts.com/indicators/twiggs_money_flow.php
+
+FIBO.js
+This is a fibonnaci retracement indicator that works out the fib levels. 
+
+
+******************************************************************************************************************************
+The genetic algo may not work with latest Gekko versions, key is to update the json passed:
 Run-ga.js
 
 Run server.js, run-ga.js is going to connect to this via posts.
