@@ -71,9 +71,9 @@ method.update = function(candle) {
 	  var ema20 = this.indicators.EMA20.result;
 
  
-	if(adxresult<70 && price>ema20 && this.direction=="long"){
+	if(adxresult>70 && price>ema20 && this.direction=="long"){
 		  this.direction="short";	
-	}else if(adxresult<70 && price<ema20){
+	}else if(adxresult>70 && price<ema20){
 		  this.direction="long";	
 	}
 
