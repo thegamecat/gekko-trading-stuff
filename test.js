@@ -3,6 +3,21 @@ This is a test strategy for Gekko
 
 Add this into the Config
 
+config.tradingAdvisor = {
+	enabled: true,
+	method:'test',
+	candleSize: 1,
+	historySize: 10,
+	adapter: 'sqlite',
+	talib: {
+		enabled: true,
+		version: '1.0.2'
+	}
+};
+
+
+
+
 config["test"] = {
   parameters:{
     optInTimePeriod: 14
