@@ -23,6 +23,9 @@ Then run run-ga.js.
 Inside you will need to set up the strat, the config section and...var properites is where you set up the genes.
 
 
+******************************************************************************************************************************
+
+
 Writing CSV of strat output candles
 
 Install fs
@@ -32,7 +35,7 @@ var fsw = require('fs');
 
 
 
-Add this in .check under your logic etc I've used adx as an example:
+Add this in .update under your logic etc I've used adx as an example:
 
   grreadtime = candle.start.toDate();
   headertxt = "date,price,adx,buys (USD),sells (BTC)\n";
