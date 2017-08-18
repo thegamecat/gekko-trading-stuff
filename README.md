@@ -48,3 +48,16 @@ Add this in .update under your logic etc I've used adx as an example:
 
   fsw.appendFileSync(this.fname, outtxt, encoding='utf8');
   outtxt = "";
+  
+  ******************************************************************************************************************************
+  
+  Running Gekko in Bash on Windows 10
+  
+  SQLite wont work with Pragma WAL so open the db with DB Browser for SQLite and change the db Pragma to DEL or OFF.
+  Then in F:\bash\gekko052\gekko\plugins\sqlite\handle.js change WAL to DEL (line 53).
+  
+  ******************************************************************************************************************************
+  
+  Having memory issues?
+  
+  Use  node --max-old-space-size=8192 server.js which gives node 8gig to play with rather than 1.5 which sucks. 
