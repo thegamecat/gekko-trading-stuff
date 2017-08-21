@@ -11,18 +11,6 @@ This is a TWIGs indicator based on https://www.incrediblecharts.com/indicators/t
 FIBO.js
 This is a fibonnaci retracement indicator that works out the fib levels. 
 
-
-******************************************************************************************************************************
-The genetic algo may not work with latest Gekko versions, key is to update the json passed:
-Run-ga.js
-
-Run server.js, run-ga.js is going to connect to this via posts.
-
-Then run run-ga.js.
-
-Inside you will need to set up the strat, the config section and...var properites is where you set up the genes.
-
-
 ******************************************************************************************************************************
 
 
