@@ -49,3 +49,11 @@ Add this in .update under your logic etc I've used adx as an example:
   Having memory issues?
   
   Use  node --max-old-space-size=8192 server.js which gives node 8gig to play with rather than 1.5 which sucks. 
+  
+  ******************************************************************************************************************************
+  
+  If you want candleprops (1000 historical candles) to be available to your strategies you can either include a talib indicator in your strategy (yuck, slow for backtests), or open plugins/baseTradingMethods.js and commend out the line below and the corresponding close bracket:
+
+ // if(this.asyncTick) {
+ 
+   ******************************************************************************************************************************
