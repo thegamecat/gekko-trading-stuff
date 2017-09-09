@@ -1,0 +1,31 @@
+
+How to set up the Genetic Algorithm: 
+
+http://gekkowarez.com/gekko-genetic-algorithm/
+
+1) npm install random-ext
+2) copy run-ga-parallel-test-all.js into the gekko root
+4) open run-ga-parallel-test-all.js in a text editor
+5) go to line 150 and edit this to point at the exchange and currency pair you wish to optimize 
+6) if you are not using the default localhost and port go to line 216 and point the GA at the correct url and port
+7) go to line 144 and set the number of backtests that will be run in parallel. Key thing here is, the more powerful the higher this will be. An i7-7700k seems most efficient with 8.
+8) go to line 258 to edit the GA config - you can probably leave this on default.
+9) save the file.
+
+
+
+Then lets run the GA.
+
+Open 2 terminals / command windows
+
+In terminal 1:
+1) go to gekko/web
+2) node --max-old-space-size=8192 server.js 
+
+Now the Gekko api server is running we can run the GA.
+
+In terminal 2:
+1) go to gekko/
+2) node run-ga-parallel.js
+
+At the end of every epoch you will see the winner for that epoch, and you will see the overall winner across all the epochs running in that session. This will all appear in terminal 2. 
