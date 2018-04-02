@@ -14,6 +14,34 @@ This is a TWIGs indicator based on https://www.incrediblecharts.com/indicators/t
 FIBO.js
 This is a fibonnaci retracement indicator that works out the fib levels. 
 
+Config:
+
+config.FIBO = {
+	optInTimePeriod: 14,
+	optInAcceleration: 0,
+	optInMaximum: 0,
+	histSize: 1000,
+	eps: 0.1,
+	ema: 21,
+	adx: 50,
+
+	parameters:{
+	optInTimePeriod: 14
+	},	
+	
+	thresholds:{
+	rocbuythreshold :0,
+	rocsellthreshold :10,
+	negativeroccount :3,
+	positiveroccount :3,
+	mfithreshold :55,
+	adxthreshold :50.2,
+    minusgap: 16,
+    plusgap: 18	
+	}
+};
+
+
 ******************************************************************************************************************************
 
 
