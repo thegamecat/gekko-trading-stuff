@@ -10,6 +10,11 @@ Place the indicators into the Strategies / Indicators folder then reference them
 
 TWIG.js
 This is a TWIGs indicator based on https://www.incrediblecharts.com/indicators/twiggs_money_flow.php
+  twigg:{
+    ema: 10,
+    adx: 50,
+    optInTimePeriod: 14,
+  },
 
 FIBO.js
 This is a fibonnaci retracement indicator that works out the fib levels. 
