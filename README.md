@@ -49,6 +49,10 @@ config.FIBO = {
 	}
 };
 
+TABBS - indicator implementation of bollinger bands using https://github.com/anandanand84/technicalindicators
+
+TABBSLINREG - indicator that outputs a linear regression PearsonsR of the BB% 
+
 
 ******************************************************************************************************************************
 
