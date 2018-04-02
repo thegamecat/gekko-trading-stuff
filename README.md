@@ -52,6 +52,7 @@ config.FIBO = {
 TABBS - indicator implementation of bollinger bands using https://github.com/anandanand84/technicalindicators
 
 TABBSLINREG - indicator that outputs a linear regression PearsonsR of the BB% 
+	this.tfbb.addIndicator('tabbs', 'TABBSLINREG', {count: settings.bb_period, standarddeviation: settings.bb_standarddeviation, bblinregupperdeviation: 2, bblinreglowerdeviation: 2 });
 
 
 ******************************************************************************************************************************
