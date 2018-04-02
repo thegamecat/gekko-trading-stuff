@@ -10,6 +10,9 @@ Place the indicators into the Strategies / Indicators folder then reference them
 
 TWIG.js
 This is a TWIGs indicator based on https://www.incrediblecharts.com/indicators/twiggs_money_flow.php
+
+Config: 
+
   twigg:{
     ema: 10,
     adx: 50,
