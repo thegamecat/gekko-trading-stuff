@@ -1,6 +1,9 @@
 # gekko-trading-stuff
 A dumping ground for my files I use with this awesome crypto currency trading platform https://github.com/askmike/gekko
 
+For the latest GekkoGA files you can find the repository here: https://github.com/gekkowarez/gekkoga/
+
+
 ******************************************************************************************************************************
 Indicators:
 Place the indicators into the Strategies / Indicators folder then reference them inside your strategy. 
