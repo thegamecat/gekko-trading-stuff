@@ -3,6 +3,7 @@ var BB = require('technicalindicators').BollingerBands;
 
 
 var Indicator = function (settings) {
+  this.input = 'candle';
   this.interval = settings.period;
   this.standarddeviation = settings.standarddeviation;
   this.result = [];
